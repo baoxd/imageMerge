@@ -1,0 +1,28 @@
+{
+  "name": "image-merge",
+  "version": "1.0.0",
+  "description": "使用canvas裁剪、合并图片",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baoxd/imageMerge.git"
+  },
+  "keywords": [
+    "canvas",
+    "image",
+    "merge"
+  ],
+  "author": "baoxd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baoxd/imageMerge/issues"
+  },
+  "homepage": "https://github.com/baoxd/imageMerge#readme",
+  "devDependencies": {
+    "jquery": "^3.1.1",
+    "jquery-ui": "^1.12.1"
+  }
+}
