@@ -1,0 +1,284 @@
+body {
+    font: 12px/1.5 "Arial","\5FAE\8F6F\96C5\9ED1","\5b8b\4f53", sans-serif;
+    color: #000;
+    background: #f2f3f8;
+}
+.y_sliderBox {
+    padding: 5px 24px 20px 24px;
+    position: relative;
+    width: 902px;
+    overflow: hidden;
+}
+.y_sliderBox .y_box {
+    padding: 0 6px;
+    width: 890px;
+    overflow: hidden;
+}
+.clearfix, .ty_headerIn, .ty_headerList ul, .b_search .b_searchList, .b_addrBox .list, .b_list001, .l_line {
+    display: block;
+}
+div {
+    display: block;
+}
+.clearfix:after, .ty_headerIn:after, .ty_headerList ul:after, .b_search .b_searchList:after, .b_addrBox .list:after, .b_list001:after, .l_line:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+ol, ul {
+    list-style: none;
+}
+ul, input {
+    padding: 0;
+}
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, form, ul, li {
+    margin: 0;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+.y_sliderBox .y_Lbtn {
+    left: 0;
+}
+.y_sliderBox .y_Lbtn, .y_sliderBox .y_Rbtn {
+    width: 24px;
+    height: 164px;
+    background: #fcfcfc;
+    position: absolute;
+    top: 20px;
+    cursor: pointer;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+.y_sliderBox .y_Lbtn i {
+    background-position: -111px 0;
+}
+.y_sliderBox .y_Lbtn i, .y_sliderBox .y_Rbtn i {
+    width: 24px;
+    height: 26px;
+    position: absolute;
+    top: 69px;
+}
+.ty_select .open i, .ty_headerIn .ty_logo, .ty_headerIn .ty_logo2, .ty_icon_person, .ty_icon_BulidM i, .ty_icon_BulidS i, .ty_icon_KFSBJ i, .ty_icon_Adv i, .ty_icon_Sys i, .ty_icon_City i, .ty_icon_Find i, .ty_icon_Ask i, .ty_icon_Phone i, .ty_icon_Tou i, .ty_icon_Root i, .ty_icon_Day i, .ty_icon_Arc i, .ty_icon_down, .ty_icon2_Index i, .ty_icon2_Act i, .ty_icon2_User i, .ty_icon2_time, .b_lineBox .tran, .y_inpRow02 .y_icon001, .y_loftlist .y_gLicon, .y_del, .y_sliderBox .y_Lbtn i, .y_sliderBox .y_Rbtn i, .y_popUpload .y_uptit i, .y_popUpload dl dd .y_loadsuc i, .y_popUpload dl dd .y_loadlos i, .y_mapBox .y_LBox .sandTableMarker a, .y_mapBox .y_RBox li .stDel, .y_mapBox .y_RBox li .y_num, .y_imgEditBox .y_data .y_addBtnbox .y_addBtn i, .y_imgEditBox .y_data .y_panel .y_Listform .y_formlist .y_delBtn, .y_P01, .y_P02, .y_P03, .y_P04, .y_P05, .y_P06, .y_P07, .y_P08, .y_P09, .y_P10, .y_P01 i, .y_P02 i, .y_P03 i, .y_P04 i, .y_P05 i, .y_P06 i, .y_P07 i, .y_P08 i, .y_P09 i, .y_P10 i, .y_popup .y_popTit .y_off, .y_popup .y_list01 li .y_off, .y_icon01, .y_op, .y_of, .y_tip01 i, .l_i, .l_table01 .l_arr, .l_iDate, .l_formUl ul.y_list01 li .y_off {
+    background: url(../images/ty_sp.png) repeat-x 0 0;
+}
+i, cite, em, var, address, dfn {
+    font-style: italic;
+}
+.y_sliderBox .y_Lbtn, .y_sliderBox .y_Rbtn {
+    width: 24px;
+    height: 164px;
+    background: #fcfcfc;
+    position: absolute;
+    top: 20px;
+    cursor: pointer;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+.y_sliderBox .y_Rbtn {
+    right: 0;
+}
+.y_sliderBox .y_Lbtn, .y_sliderBox .y_Rbtn {
+    width: 24px;
+    height: 164px;
+    background: #fcfcfc;
+    position: absolute;
+    top: 20px;
+    cursor: pointer;
+}
+.y_sliderBox .y_Rbtn i {
+    background-position: -137px 0;
+}
+.y_sliderBox .y_Lbtn i, .y_sliderBox .y_Rbtn i {
+    width: 24px;
+    height: 26px;
+    position: absolute;
+    top: 69px;
+}
+.ty_select .open i, .ty_headerIn .ty_logo, .ty_headerIn .ty_logo2, .ty_icon_person, .ty_icon_BulidM i, .ty_icon_BulidS i, .ty_icon_KFSBJ i, .ty_icon_Adv i, .ty_icon_Sys i, .ty_icon_City i, .ty_icon_Find i, .ty_icon_Ask i, .ty_icon_Phone i, .ty_icon_Tou i, .ty_icon_Root i, .ty_icon_Day i, .ty_icon_Arc i, .ty_icon_down, .ty_icon2_Index i, .ty_icon2_Act i, .ty_icon2_User i, .ty_icon2_time, .b_lineBox .tran, .y_inpRow02 .y_icon001, .y_loftlist .y_gLicon, .y_del, .y_sliderBox .y_Lbtn i, .y_sliderBox .y_Rbtn i, .y_popUpload .y_uptit i, .y_popUpload dl dd .y_loadsuc i, .y_popUpload dl dd .y_loadlos i, .y_mapBox .y_LBox .sandTableMarker a, .y_mapBox .y_RBox li .stDel, .y_mapBox .y_RBox li .y_num, .y_imgEditBox .y_data .y_addBtnbox .y_addBtn i, .y_imgEditBox .y_data .y_panel .y_Listform .y_formlist .y_delBtn, .y_P01, .y_P02, .y_P03, .y_P04, .y_P05, .y_P06, .y_P07, .y_P08, .y_P09, .y_P10, .y_P01 i, .y_P02 i, .y_P03 i, .y_P04 i, .y_P05 i, .y_P06 i, .y_P07 i, .y_P08 i, .y_P09 i, .y_P10 i, .y_popup .y_popTit .y_off, .y_popup .y_list01 li .y_off, .y_icon01, .y_op, .y_of, .y_tip01 i, .l_i, .l_table01 .l_arr, .l_iDate, .l_formUl ul.y_list01 li .y_off {
+    background: url(../images/ty_sp.png) repeat-x 0 0;
+}
+i, cite, em, var, address, dfn {
+    font-style: italic;
+}
+.y_sliderBox .y_Lbtn, .y_sliderBox .y_Rbtn {
+    width: 24px;
+    height: 164px;
+    background: #fcfcfc;
+    position: absolute;
+    top: 20px;
+    cursor: pointer;
+}
+.y_sliderBox .y_box ul li {
+    float: left;
+    margin: 15px 15px 0 0;
+    position: relative;
+}
+ol, li {
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.gl_picconw {
+    width: 952px;
+    height: 714px;
+    border: 1px solid #f2f2f2;
+}
+.gl_piccon {
+    width: 948px;
+    height: 710px;
+    margin: 0 auto;
+    padding: 2px;
+    background: #fff;
+}
+.clearfix, .ty_headerIn, .ty_headerList ul, .b_search .b_searchList, .b_addrBox .list, .b_list001, .l_line {
+    display: block;
+}
+.clearfix:after, .ty_headerIn:after, .ty_headerList ul:after, .b_search .b_searchList:after, .b_addrBox .list:after, .b_list001:after, .l_line:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.ph351 {
+    height: 351px;
+}
+.pw470 {
+    width: 470px;
+}
+.pw944, .pw628, .pw470, .pw312, .ph706, .ph470, .ph351, .ph233, .ph232 {
+    float: left;
+    background: #e1e7f2;
+    margin: 2px;
+    display: inline;
+}
+.gl_container {
+    position: relative;
+    overflow: hidden;
+}
+.gl_piccon .gl_control {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -118px;
+    width: 236px;
+    height: 20px;
+    background: rgba(54,54,54,0.77);
+    border-radius: 10px;
+    z-index: 2;
+}
+.gl_piccon .gl_control span {
+    float: left;
+    width: 45px;
+    text-align: center;
+    color: #fff;
+    line-height: 20px;
+}
+.gl_piccon .gl_control .gzoomSlider {
+    position: relative;
+    float: left;
+    margin-top: 9px;
+    height: 2px;
+    font-size: 0;
+}
+.gl_piccon .gl_control .gl_jind {
+    background-color: #fd965f;
+    height: 2px;
+    float: left;
+}
+.gl_piccon .gl_control .gzoomSlider {
+    position: relative;
+    float: left;
+    margin-top: 9px;
+    height: 2px;
+    font-size: 0;
+}
+.gl_piccon .gl_control .ui-slider .ui-slider-handle {
+    cursor: default;
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    z-index: 2;
+    background: url(../images/gl_map.png) -711px -109px no-repeat;
+}
+.gl_piccon .gl_control .ui-slider-horizontal .ui-slider-handle {
+    margin-left: -5px;
+    top: -5px;
+}
+.gl_piccon .gl_control .gzoomSlider {
+    position: relative;
+    float: left;
+    margin-top: 9px;
+    height: 2px;
+    font-size: 0;
+}
+.ph351 {
+    height: 351px;
+}
+.pw470 {
+    width: 470px;
+}
+.pw944, .pw628, .pw470, .pw312, .ph706, .ph470, .ph351, .ph233, .ph232 {
+    float: left;
+    background: #e1e7f2;
+    margin: 2px;
+    display: inline;
+}
+.gl_container {
+    position: relative;
+    overflow: hidden;
+}
+.ph351 {
+    height: 351px;
+}
+.pw944 {
+    width: 944px;
+}
+.pw944, .pw628, .pw470, .pw312, .ph706, .ph470, .ph351, .ph233, .ph232 {
+    float: left;
+    background: #e1e7f2;
+    margin: 2px;
+    display: inline;
+}
+.y_btnBox02 {
+    font-size: 0;
+    padding: 30px 0;
+}
+.y_btnBox02 a, .y_btnBox02 input {
+    width: 110px;
+    margin-right: 10px;
+}
+.ty_btn_cancel {
+    width: 68px;
+    height: 30px;
+    line-height: 28px;
+    background-color: #fafafc;
+    color: #989dae;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border: 1px solid #ced0d9;
+}
+.ty_btn_confirm, .ty_btn_cancel, .ty_btn_modify {
+    display: inline-block;
+    font-family: "宋体";
+    font-size: 12px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    vertical-align: middle;
+}
