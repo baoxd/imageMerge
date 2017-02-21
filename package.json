@@ -1,11 +1,11 @@
 {
-  "name": "image-merge",
+  "name": "image-merge-cut",
   "version": "1.0.0",
   "description": "使用canvas裁剪、合并图片",
   "main": "index.js",
   "scripts": {
     "start": "http-server -a 127.0.0.1 -p 8000",
-    "test": "opener http://127.0.0.1:8000/test/test.html"
+    "test": "opener http://127.0.0.1:8000"
   },
   "repository": {
     "type": "git",
