@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body style="margin:20px 20px;">
+
+	<div>
+		<h1 style="font-size:140%;">合并后的图片</h1>
+		<div class="y_sliderBox">
+	        <div class="y_box clearfix">
+	            <ul style="width:500%;height:190px;margin-left:0;" class="mergedImg">
+	                
+	            </ul>
+	        </div>
+	        <a class="y_Lbtn" id="imgMerged_prev"><i></i></a>
+	        <a class="y_Rbtn" id="imgMerged_next"><i></i></a>
+	    	</div>
+	</div>
+	
+	<div>
+		<h1  style="font-size:140%;">选择图片</h1>
+		<div class="y_sliderBox">
+	        <div class="y_box clearfix">
+	            <ul style="width:500%;height:190px;margin-left:0;">
+	                <li>
+	                    <div class="y_add">
+	                        <img src="../src/images/y_addimg.png" id="imgOpen_trigger">
+	                        <input type="file" multiple="multiple" style="position:absolute;top:-1000px;left:-1000px;width:10px;height:10px;" id="imgOpen_file">
+	                    </div>
+	                </li>
+	            </ul>
+	        </div>
+	        <a class="y_Lbtn" id="imgEdit_prev"><i></i></a>
+	        <a class="y_Rbtn" id="imgEdit_next"><i></i></a>
+	    	</div>
+	</div>
+
+    	<div>
+    		<h1  style="font-size:140%;">请将图片拖拽此区域</h1>
+    		<div class="gl_picconw mt5">
+	        <div class="gl_piccon clearfix" id="container">
+	        	<div class="pw470 ph351 gl_container ui-droppable">
+	        		<div class="gl_control">
+	        			<span>缩放</span>
+	        			<div class="gzoomSlider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="width: 180px;background-color:#ffffff;" id="slider" aria-disabled="false">
+	        				<div class="gl_jind" style="width:50%;"></div>
+	        				<a href="#" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 50%;"></a>
+	        			</div>
+	        		</div>
+	        	</div>
+	        	<div class="pw470 ph351 gl_container ui-droppable">
+	        		<div class="gl_control">
+	        			<span>缩放</span>
+	        			<div class="gzoomSlider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="width: 180px;background-color:#ffffff;" id="slider" aria-disabled="false">
+	        				<div class="gl_jind" style="width:50%;"></div>
+	        				<a href="#" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 50%;"></a>
+	        			</div>
+	        		</div>
+	        	</div>
+	        	<div class="pw944 ph351 gl_container ui-droppable">
+	        		<div class="gl_control">
+	        			<span>缩放</span>
+	        			<div class="gzoomSlider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="width: 180px;background-color:#ffffff;" id="slider" aria-disabled="false">
+	        				<div class="gl_jind" style="width:50%;"></div>
+	        				<a href="#" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 50%;"></a>
+	        			</div>
+	        		</div>
+	        	</div>
+	        </div>
+	    </div>
+    	</div>
+
+    	<div class="y_btnBox02">
+        <input type="submit" class="ty_btn_cancel saveImg" value="生成拼图">
+     </div>
+</body>
+<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+<script src="./bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="./src/js/imageSelect.js"></script>
+<script src="./src/js/imageMerge.js"></script>
+<script>
+	// 图片选择
+	var selectTrigger = '#imgOpen_trigger',
+		file = '#imgOpen_file',
+		imgItemClassName = 'imgEdit_item',
+		prev = '#imgEdit_prev',
+		next = '#imgEdit_next',
+		editState = '.imgEdit_state',
+		curClassName = 'cur',
+		imgDragSource = 'gl_dragsource',
+		opts = {
+			maxSize: 1048576,
+			getItemHtml: function(base64, i) {
+				return '<li class="' + imgItemClassName + '">' +
+					'	<div class="y_loftlist ' + imgDragSource + '">' +
+					'		<img src="' + base64 + '" name="1">' +
+					'		<span class="y_tit">图片' + '</span><span class="y_gLicon none"></span>' +
+					'	</div>' +
+					'	<div class="y_del img_del"></div>' +
+					'</li>';
+			},
+			triggerDom: $(selectTrigger),
+			fileDom: $(file),
+			wrapDom: $(selectTrigger).closest('ul'),
+			imgItemClassName: imgItemClassName,
+			prevDom: $(prev),
+			nextDom: $(next),
+			loadCallback: function() {
+				$('.' + imgDragSource).draggable({
+					helper: "clone",
+					scroll: false
+						// cursor: 'move'
+				});
+			}
+		};
+	var is = new ImageSelect(opts);
+	var im = new ImageMerge({});
+
+	// 生成合并图片
+	$('.saveImg').on('click', function() {
+		// 合并后图片宽度，默认等于div宽度
+		var imgWidth = null ;
+		im.doMerge(imgWidth, function(base64) {
+			var num = $('.imgItem_mergeed').length;
+
+			if (base64) {
+				var html = '<li class="imgItem_mergeed' + '">' +
+					'	<div class="y_loftlist ' + '">' +
+					'		<img src="' + base64 + '" name="1">' +
+					'		<span class="y_tit">拼图' + '</span><span class="y_gLicon none"></span>' +
+					'	</div>' +
+					'	<div class="y_del img_del"></div>' +
+					'</li>';
+				$('.mergedImg').append(html);
+
+				alert('生成拼图成功！');
+				im.clearDrop();
+			}
+		});
+	});
+
+	// 删除图片
+	$('body').on('click', '.img_del', function(){
+		$(this).closest('li').remove();
+	});
+
+</script>
+</html>
