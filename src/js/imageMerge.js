@@ -139,9 +139,10 @@
 						position = {};
 
 					position.img = img[0];
-
 					position.imgTop = 0;
 					position.imgLeft = 0;
+
+					// 计算图片在画布中的位置和图片被绘制的位置
 					if (imgTop > 0) {
 						position.canvasTop = conTop + imgTop;
 					} else {
@@ -236,7 +237,8 @@
 				}
 			}
 		}
-		// 清除drop内容
+		
+	// 清除drop内容
 	ImageMerge.prototype.clearDrop = function() {
 		var self = this,
 			opts = this.defOpts,
